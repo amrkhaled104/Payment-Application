@@ -5,9 +5,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 
-#define MAX_NAME_SIZE 25
-#define EXP_DATE_SIZE 6
-#define MAX_PAN_SIZE 20
+
 
 // Function to check if a string contains only digits
 static bool is_digits_only(const uint8_t *str) {
@@ -103,44 +101,4 @@ EN_cardError_t getCardPAN(ST_cardData_t *cardData) {
         free(strPAN);
         return WRONG_PAN;
     }
-}
-
-// Test functions
-
-void getCardHolderNameTest(void) {
-    ST_cardData_t obj;
-    EN_cardError_t check = getCardHolderName(&obj);
-    while (check == WRONG_NAME) {
-        printf("Wrong input, please focus on name length (20-24 characters) and ensure it's not all numbers.\n");
-        check = getCardHolderName(&obj);
-    }
-    printf("Card holder name is: %s\n", obj.cardHolderName);
-}
-
-void getCardExpiryDateTest(void) {
-    ST_cardData_t obj;
-    EN_cardError_t check = getCardExpiryDate(&obj);
-    while (check == WRONG_EXP_DATE) {
-        printf("Wrong input, please focus on the expiry date format (MM/YY) and ensure it is correct.\n");
-        check = getCardExpiryDate(&obj);
-    }
-    printf("Card expiration date is: %s\n", obj.cardExpirationDate);
-}
-
-void getCardPANTest(void) {
-    ST_cardData_t obj;
-    EN_cardError_t check = getCardPAN(&obj);
-    while (check == WRONG_PAN) {
-        printf("Wrong input, please ensure the PAN is between 16 and 19 characters long and contains only alphanumeric characters.\n");
-        check = getCardPAN(&obj);
-    }
-    printf("Card PAN is: %s\n", obj.primaryAccountNumber);
-}
-
-int main() {
-    // Test the functions
-   getCardHolderNameTest();
-    getCardExpiryDateTest();
-    getCardPANTest();
-    return 0;
 }

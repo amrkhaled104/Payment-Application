@@ -3,6 +3,10 @@
 
 #include <stdint.h> 
 
+
+#define MAX_NAME_SIZE 25
+#define EXP_DATE_SIZE 6
+#define MAX_PAN_SIZE 20
 // Structure to hold card data
 typedef struct ST_cardData_t
 {
