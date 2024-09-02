@@ -98,3 +98,23 @@ transaction-management-system/
 
 ## Developer
 This project was developed by [Amr Khaled](https://github.com/amrkhaled104). Visit my GitHub profile for more projects!
+
+## Visuals
+### ATM Machine
+![ATM Machine](https://images.unsplash.com/photo-1599585223064-04c37f27e5f3)  
+*Modern ATM machine.*
+
+### ATM Interface
+![ATM Interface](https://images.unsplash.com/photo-1615649894475-7c45a576e6c3)  
+*ATM interface screen.*
+
+### Payment Terminal
+![Payment Terminal](https://images.unsplash.com/photo-1600891962188-2d451b9e45e2)  
+*Electronic payment terminal.*
+
+### POS Terminal
+![POS Terminal](https://images.unsplash.com/photo-1556740749-9b1f2e1d11f5)  
+*Point of Sale (POS) terminal.*
+
+### Transaction Interface
+![Transaction Interface](https://images.unsplash.com/photo-1596355756396-e5a9b7a5be54)  
