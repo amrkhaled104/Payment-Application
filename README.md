@@ -109,4 +109,4 @@ This project was developed by [Amr Khaled](https://github.com/amrkhaled104). Vis
 *Electronic payment terminal.*
 
 #If you've made it this far, dear reader, I'd like to share this with you:
-https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BqZ3gxYmhqZWFzMnQ3d281NTRtZmN6bTRidXJnc3h1Y2Y3OWNpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BYoRqTmcgzHcL9TCy1/giphy.gif
+(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BqZ3gxYmhqZWFzMnQ3d281NTRtZmN6bTRidXJnc3h1Y2Y3OWNpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BYoRqTmcgzHcL9TCy1/giphy.gif)
