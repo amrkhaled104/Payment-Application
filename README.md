@@ -59,13 +59,20 @@ transaction-management-system/
 ├── app/
 │   ├── app.c
 │   ├── app.h
-├── include/
-│   ├── handling.h
-│   ├── app.h
+├── Server/
+│   ├── server.c
+│   ├── server.h
+├── Terminal/
+│   ├── terminal.c
+│   ├── terminal.h
+├── Card/
+│   ├── card.c
+│   ├── card.h
 ├── main.c
 ├── transactions.csv
 ├── accountDB.csv
 └── README.md
+
 ```
 
 ## Modules
