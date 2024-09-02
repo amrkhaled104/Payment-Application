@@ -8,7 +8,7 @@ ST_transaction_t *Headtransaction = NULL;
 ST_accountsDB_t *HeadaccountDB = NULL;
 
 // Function to convert transaction state enum to string
-const char* transStateToString(EN_transStat_t state) {
+const char* transStateToString(EN_transState_t state) {
     switch (state) {
         case APPROVED: return "APPROVED";
         case DECLINED_INSUFFICIENT_FUND: return "DECLINED_INSUFFICIENT_FUND";
@@ -29,7 +29,7 @@ const char* accountStateToString(EN_accountState_t state) {
 }
 
 // Function to convert string to transaction state enum
-EN_transStat_t stringToTransState(const char *str) {
+EN_transState_t stringToTransState(const char *str){
     if (strcmp(str, "APPROVED") == 0) return APPROVED;
     if (strcmp(str, "DECLINED_INSUFFICIENT_FUND") == 0) return DECLINED_INSUFFICIENT_FUND;
     if (strcmp(str, "DECLINED_STOLEN_CARD") == 0) return DECLINED_STOLEN_CARD;
@@ -209,7 +209,7 @@ void print_old_list() {
         printf("The transaction list is empty.\n");
         return;
     }
-
+     strcpy(current->cardHolderData.cardHolderName, "amrr khaled saad elsisy");
     while (current != NULL) {
         printf("Transaction:\n");
         printf("Name: %s\n", current->cardHolderData.cardHolderName);
@@ -234,8 +234,8 @@ void print_new_list() {
         printf("The accounts list is empty.\n");
         return;
     }
-
-    while (current != NULL) {
+  current->state   = stringToAccountState("BLOCKED");
+ while (current != NULL) {
         printf("Account:\n");
         printf("Balance: %.2f\n", current->balance);
         printf("PAN: %s\n", current->primaryAccountNumber);
