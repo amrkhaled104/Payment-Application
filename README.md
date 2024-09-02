@@ -20,7 +20,43 @@ The **Transaction Management System** is a robust application designed to handle
 - **Account Management**: Manages account data including balance and state.
 - **Data Persistence**: Saves and loads data from CSV files.
 - **Interactive Console Application**: Provides a console interface for operations.
+### 1. **Card Validation**
+   - **Cardholder Name Validation:**  
+     - The program ensures that the cardholder's name consists of 20 to 24 alphabetic characters. This feature helps verify that the entered name is valid and meets the required standards.
+   - **Primary Account Number (PAN) Validation:**  
+     - The program checks that the Primary Account Number (PAN) consists of 16 to 19 digits and rejects any invalid numbers. This ensures that only valid numbers conforming to the standard format are accepted.
+   - **Card Expiry Date Validation:**  
+     - The program validates the card's expiry date to ensure it follows the required format "MM/YY" and that the card has not expired.
 
+### 2. **Transaction Management**
+   - **Transaction Date Validation:**  
+     - The program checks the validity of the transaction date entered by the user, ensuring it matches the "DD/MM/YYYY" format. This helps prevent the entry of incorrect or invalid dates.
+   - **Transaction Amount Validation:**  
+     - The program ensures that the entered transaction amount is greater than zero and does not exceed the allowed maximum. This allows effective management of transactions and prevents errors due to incorrect amounts.
+   - **Maximum Transaction Amount Setting:**  
+     - Users can set a maximum transaction amount, and the program ensures that transactions do not exceed this limit. This feature provides flexibility in managing transaction limits.
+
+### 3. **Server-Side Processing**
+   - **Account Validation:**  
+     - The program verifies the existence of the account associated with the card in the account database, ensuring that all transactions are linked to valid and known accounts.
+   - **Account State Management:**  
+     - The program checks the account's status to see if it is active or blocked, ensuring that transactions are processed only for active accounts.
+   - **Sufficient Balance Check:**  
+     - The program checks if the account balance is sufficient to perform the transaction. If the balance is insufficient, the transaction is declined, protecting the accounts from overdrafts.
+
+### 4. **Data Persistence**
+   - **Transaction Saving:**  
+     - All transactions are saved in the server's transaction database, allowing secure and seamless tracking of all transactions.
+   - **Saved Transactions Listing:**  
+     - Users can view all saved transactions on the server, providing transparency and ease in reviewing past records.
+
+### 5. **User Interaction Enhancements**
+   - **Looping for Valid Input:**  
+     - If the user enters an incorrect option, the program continues to prompt for valid input until a correct choice is made. This improves the user experience and reduces the chances of errors.
+
+### 6. **Modular Design**
+   - **Separation of Concerns:**  
+     - The program is structured with a modular design, separating card data processing, transaction management, and server handling into independent modules. This makes it easier to extend and modify the project in the future.
 ## Installation
 To set up the project, follow these steps:
 
