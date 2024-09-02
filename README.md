@@ -108,6 +108,5 @@ This project was developed by [Amr Khaled](https://github.com/amrkhaled104). Vis
 ![Payment Terminal](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDg1aGI3cGVrcmx1ZHMzeno2OWFuMjFsOW8zMHk5M3lvMnc4NmE5OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TDyxBGZcViZnoye8iN/giphy.gif)  
 *Electronic payment terminal.*
 
-### Transaction Interface
-![Transaction Interface](https://www.pinterest.com/pin/130956301649035151/)  
-*Transaction details screen.*
+#If you've made it this far, dear reader, I'd like to share this with you:
+https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BqZ3gxYmhqZWFzMnQ3d281NTRtZmN6bTRidXJnc3h1Y2Y3OWNpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BYoRqTmcgzHcL9TCy1/giphy.gif
