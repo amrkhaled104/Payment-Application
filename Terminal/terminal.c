@@ -78,6 +78,6 @@ static int isLuhnValid(const char *pan) {
 }
 
 // Function to validate the card's PAN
-EN_terminalError_t isValidCardPAN(ST_cardData_t *cardData) {
-    return isLuhnValid((char*)cardData->primaryAccountNumber) ? TERMINAL_OK : INVALID_CARD;
+EN_terminalError_t isValidCardPAN(const char *str) {
+    return isLuhnValid(str) ? TERMINAL_OK : INVALID_CARD;
 }

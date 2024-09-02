@@ -12,13 +12,21 @@ int main()
     while (continueTransaction)
     {
         appStart();
-        printf("\nAnother Transaction? (y/n): ");
-        scanf(" %c", &userChoice);
 
-        if (userChoice == 'n' || userChoice == 'N')
-        {
-            continueTransaction = false;
-        }
+        do {
+            printf("\nAnother Transaction? (y/n): ");
+            fflush(stdin);
+            scanf(" %c", &userChoice);
+            if (userChoice == 'y' || userChoice == 'Y') {
+                continueTransaction = true;
+                break;
+            } else if (userChoice == 'n' || userChoice == 'N') {
+                continueTransaction = false;
+                break;
+            } else {
+                printf("Invalid input. Please enter 'y' or 'n'.\n");
+            }
+        } while (true);
     }
 
     save_data();
