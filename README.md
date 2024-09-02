@@ -101,20 +101,13 @@ This project was developed by [Amr Khaled](https://github.com/amrkhaled104). Vis
 
 ## Visuals
 ### ATM Machine
-![ATM Machine](https://images.unsplash.com/photo-1599585223064-04c37f27e5f3)  
+![ATM Machine](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnp3bnd4dzJrenAwOGJiZzI0cm42ZDZnZmFleWowZ3U1b3ViOGdyZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9rwJNLBu8FMfixoIxL/giphy.gif)  
 *Modern ATM machine.*
 
-### ATM Interface
-![ATM Interface](https://images.unsplash.com/photo-1615649894475-7c45a576e6c3)  
-*ATM interface screen.*
-
 ### Payment Terminal
-![Payment Terminal](https://images.unsplash.com/photo-1600891962188-2d451b9e45e2)  
+![Payment Terminal](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDg1aGI3cGVrcmx1ZHMzeno2OWFuMjFsOW8zMHk5M3lvMnc4NmE5OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TDyxBGZcViZnoye8iN/giphy.gif)  
 *Electronic payment terminal.*
 
-### POS Terminal
-![POS Terminal](https://images.unsplash.com/photo-1556740749-9b1f2e1d11f5)  
-*Point of Sale (POS) terminal.*
-
 ### Transaction Interface
-![Transaction Interface](https://images.unsplash.com/photo-1596355756396-e5a9b7a5be54)  
+![Transaction Interface](https://www.pinterest.com/pin/130956301649035151/)  
+*Transaction details screen.*
