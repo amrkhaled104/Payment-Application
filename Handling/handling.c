@@ -12,7 +12,9 @@ const char* transStateToString(EN_transState_t state) {
     switch (state) {
         case APPROVED: return "APPROVED";
         case DECLINED_INSUFFICIENT_FUND: return "DECLINED_INSUFFICIENT_FUND";
+        case DECLINED_EXCEEDING_AMOUNT: return "DECLINED_EXCEEDING_AMOUNT";
         case DECLINED_STOLEN_CARD: return "DECLINED_STOLEN_CARD";
+        case DECLINED_EXPIRED_CARD: return "DECLINED_EXPIRED_CARD";
         case FRAUD_CARD: return "FRAUD_CARD";
         case INTERNAL_SERVER_ERROR: return "INTERNAL_SERVER_ERROR";
         default: return "UNKNOWN";
@@ -32,7 +34,9 @@ const char* accountStateToString(EN_accountState_t state) {
 EN_transState_t stringToTransState(const char *str){
     if (strcmp(str, "APPROVED") == 0) return APPROVED;
     if (strcmp(str, "DECLINED_INSUFFICIENT_FUND") == 0) return DECLINED_INSUFFICIENT_FUND;
+    if (strcmp(str, "DECLINED_EXCEEDING_AMOUNT") == 0) return DECLINED_EXCEEDING_AMOUNT;
     if (strcmp(str, "DECLINED_STOLEN_CARD") == 0) return DECLINED_STOLEN_CARD;
+    if (strcmp(str, "DECLINED_EXPIRED_CARD") == 0) return DECLINED_EXPIRED_CARD;
     if (strcmp(str, "FRAUD_CARD") == 0) return FRAUD_CARD;
     if (strcmp(str, "INTERNAL_SERVER_ERROR") == 0) return INTERNAL_SERVER_ERROR;
     return -1; // Or handle error as needed

@@ -3,20 +3,7 @@
 #include <string.h>
 #include "app.h"
 
-static void displayTransactionDetails(ST_transaction_t *transData)
-{
-    printf("------------------------------------------------------------\n");
-    printf("Card Holder's Name: %s\n", transData->cardHolderData.cardHolderName);
-    printf("Card PAN: %s\n", transData->cardHolderData.primaryAccountNumber);
-    printf("Card Expiry Date: %s\n", transData->cardHolderData.cardExpirationDate);
-    printf("------------------------------------------------------------\n");
-    printf("Transaction Date: %s\n", transData->terminalData.transactionDate);
-    printf("Transaction Maximum Amount: %.2f\n", transData->terminalData.maxTransAmount);
-    printf("Transaction Amount: %.2f\n", transData->terminalData.transAmount);
-    printf("------------------------------------------------------------\n");
-    printf("Transaction Sequence Number: %d\n", transData->transactionSequenceNumber);
-    printf("------------------------------------------------------------\n");
-}
+
 
 // Function to get user choice from input
 static UserChoice getUserChoice(const char* input) {
@@ -53,39 +40,47 @@ void appStart(void)
                 printf("You chose to perform a transaction.\n");
                 // Handle the transaction process
                 {
-                    ST_transaction_t transaction = {{"", "", ""}, {0.0f, 0.0f, ""}, 0, 0};
+                    //ST_transaction_t transaction = {{"", "", ""}, {0.0f, 0.0f, ""}, 0, 5};
+                    ST_transaction_t transaction ;
                     EN_transState_t transactionState = recieveTransactionData(&transaction);
-
                     switch (transactionState)
                     {
                         case APPROVED:
                             printf("Transaction APPROVED\n");
-                            displayTransactionDetails(&transaction);
 							saveTransaction(&transaction);
                             break;
                         case DECLINED_EXPIRED_CARD:
                             printf("Transaction DECLINED: EXPIRED CARD\n");
+							saveTransaction(&transaction);
                             break;
                         case DECLINED_EXCEEDING_AMOUNT:
-                            printf("Transaction DECLINED: EXCEEDING THE LIMIT\n");
+                            printf("Transaction DECLINED: EXCEEDING THE LIMIT(3000.00 Pound)\n");
+							saveTransaction(&transaction);
                             break;
                         case DECLINED_INSUFFICIENT_FUND:
                             printf("Transaction DECLINED: INSUFFICIENT FUND\n");
+							saveTransaction(&transaction);
                             break;
                         case DECLINED_STOLEN_CARD:
                             printf("Transaction DECLINED: STOLEN CARD\n");
+							saveTransaction(&transaction);
                             break;
                         case INTERNAL_SERVER_ERROR:
                             printf("Transaction ERROR: INTERNAL SERVER ERROR\n");
+							saveTransaction(&transaction);
                             break;
 						case FRAUD_CARD:
                             printf("Transaction ERROR: FRAUD_CARD ERROR\n");
+							saveTransaction(&transaction);
                             break;
                         default:
                             printf("Transaction ERROR: UNKNOWN STATE\n");
+							saveTransaction(&transaction);
                             break;
                     }
+					
                 }
+				
                 break;
             case REPORT_STOLEN_CARD:
                 printf("You chose to report a stolen card.\n");

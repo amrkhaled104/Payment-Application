@@ -45,7 +45,7 @@ typedef struct ST_accountsDB_t {
 } ST_accountsDB_t;
 
 EN_transState_t recieveTransactionData(ST_transaction_t *transData);
-EN_serverError_t isValidAccount(ST_cardData_t *cardData, ST_accountsDB_t* accountRefrence);
+EN_serverError_t isValidAccount(ST_cardData_t *cardData);
 EN_serverError_t isBlockedAccount(ST_accountsDB_t *accountRefrence);
 EN_serverError_t isAmountAvailable(ST_transaction_t *transData);
 EN_serverError_t saveTransaction(ST_transaction_t *transData);
