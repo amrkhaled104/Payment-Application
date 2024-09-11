@@ -7,8 +7,9 @@
 typedef enum {
     INVALID_CHOICE = -1,
     TRANSACTION = 1,
-    REPORT_STOLEN_CARD = 2
+	SHOW_LAST_TRANSACTION=2,
+	SHOW_TRANSACTION_HISTORY=3,
+    REPORT_STOLEN_CARD = 4
 } UserChoice;
-
 void appStart(void);
 #endif

@@ -52,6 +52,9 @@ EN_serverError_t saveTransaction(ST_transaction_t *transData);
 void listSavedTransactions(void);
 void initialize();
 void reportStolenCard();
+void showLastTransaction();
+void showTransactionHistory();
+void clearScreen();
 
 #endif /* SERVER_H */
 
